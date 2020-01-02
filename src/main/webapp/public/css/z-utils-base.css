@@ -1,0 +1,16 @@
+/*
+    基础样式
+*/
+/* 列表 */
+ul.utils-list-noStyle,
+ol.utils-list-noStyle {list-style: none; /* 删除 */}
+
+.utils-hover-cursor-pointer{cursor: pointer; /* 鼠标指针变成手 */}
+
+
+/* 表格 */
+table.utils-table-border-collapse {border-collapse: collapse; /* 合并单元格 */}
+
+/* 表单 */
+form.utils-input-border-none input,
+input.utils-input-border-none {border: none; /* 删除边框 */ outline: none; /* 删除选中边框 */}

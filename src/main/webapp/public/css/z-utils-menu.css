@@ -1,0 +1,17 @@
+.navbar .navbar-brand > img {
+    max-height: 40px;
+}
+
+/* 左侧菜单 */
+.z-left-menu {
+    width: 220px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.z-right-content-box {
+    width: calc(100% - 220px);
+}
