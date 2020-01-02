@@ -1,0 +1,49 @@
+{
+  "languageName": "English",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "class": "Class",
+    "project": "Projects",
+    "team": "Team",
+    "customer": "Customer",
+    "wedo": "Public Welfare",
+    "contact": "Contact Us"
+  },
+  "about": {
+
+  },
+  "myClass": {
+    "leader": "Leadership development curriculum",
+    "user": "Individual ability curriculum system",
+    "sell": "Sales and marketing system"
+  },
+  "contact": {
+    "contactUs": "Contact Us"
+  },
+  "form": {
+    "submit": "Submit",
+    "userName": "User Name",
+    "userAppellation": "Appellation",
+    "userCompanyPost": "Company Post",
+    "userCompanyName": "The name of the company",
+    "userCompanyAddress": "The company address",
+    "demand": "Demand"
+  },
+  "footer": {
+    "friendLink": [
+      "Link 1",
+      " link 2",
+      " link 3",
+      " link 4"
+    ],
+    "info": "Focusing on enterprise talent development and business results, aishin is a provider of overall solutions for talent and organizational development, and is committed to becoming a strategic partner for enterprise sustainable development.Asense provides professional management training and consulting services to help enterprises improve organizational performance and promote the professional process of management.Over the years, YiXin continuously introduced with a large number of senior industry experts and institutions, improve and develop high quality training courses, content of leadership and management, marketing and sales, personal ability development, and other fields, through diversity, scientific, innovative learning scheme, provide positive driving force for enterprise talent development, create personal growth and business have to double value."
+  },
+  "contentMenu": {
+    "about_intro": "Our introduction",
+    "about_advantage": "Our strengths",
+    "about_situation": "Our service situation",
+    "about_process": "Our service flow",
+    "about_join": "Join us"
+  }
+}

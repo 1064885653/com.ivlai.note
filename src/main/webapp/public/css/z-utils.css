@@ -1,0 +1,65 @@
+/*
+    基础样式
+*/
+/* 列表 */
+ul.utils-list-noStyle,
+ol.utils-list-noStyle {list-style: none; /* 删除 */}
+
+.utils-hover-cursor-pointer{cursor: pointer; /* 鼠标指针变成手 */}
+
+
+/* 表格 */
+table.utils-table-border-collapse {border-collapse: collapse; /* 合并单元格 */}
+
+/* 表单 */
+form.utils-input-border-none input,
+input.utils-input-border-none {border: none; /* 删除边框 */ outline: none; /* 删除选中边框 */}
+
+/*
+    动画
+*/
+.utils-transition-1s {transition: 1s; /* 动画时长 1s */}
+.utils-transition-2s {transition: 2s; /* 动画时长 2s */}
+.utils-transition-100ms {transition: 100ms; /* 动画时长 100ms */}
+.utils-transition-200ms {transition: 200ms; /* 动画时长 200ms */}
+.utils-transition-250ms {transition: 250ms; /* 动画时长 250ms */}
+.utils-transition-300ms {transition: 300ms; /* 动画时长 300ms */}
+.utils-transition-500ms {transition: 500ms; /* 动画时长 500ms */}
+.utils-transition-750ms {transition: 750ms; /* 动画时长 750ms */}
+
+.utils-transform-scale-1 {transform: scale(1.01); /* 放大比例1.01 */}
+.utils-transform-scale-2 {transform: scale(1.02); /* 放大比例1.02 */}
+.utils-transform-scale-5 {transform: scale(1.05); /* 放大比例1.05 */}
+.utils-transform-scale-10 {transform: scale(1.10); /* 放大比例1.10 */}
+.utils-transform-bg-scale-1 {background-size: 101%; /* 放大比例1.01 */}
+.utils-transform-bg-scale-2 {background-size: 102%; /* 放大比例1.02 */}
+.utils-transform-bg-scale-5 {background-size: 105%; /* 放大比例1.05 */}
+.utils-transform-bg-scale-10 {background-size: 110%; /* 放大比例1.10 */}
+.utils-transform-rotate-15deg {transform: rotate(15deg); /* 顺时针旋转15deg */}
+.utils-transform-rotate-30deg {transform: rotate(30deg); /* 顺时针旋转30deg */}
+.utils-transform-rotate-45deg {transform: rotate(45deg); /* 顺时针旋转45deg */}
+.utils-transform-rotate--15deg {transform: rotate(-15deg); /* 逆时针旋转15deg */}
+.utils-transform-rotate--30deg {transform: rotate(-30deg); /* 逆时针旋转30deg */}
+.utils-transform-rotate--45deg {transform: rotate(-45deg); /* 逆时针旋转45deg */}
+
+.utils-transform-hover-scale-1:hover {transform: scale(1.01); /* 鼠标经过时触发放大比例1.01 */}
+.utils-transform-hover-scale-2:hover {transform: scale(1.02); /* 鼠标经过时触发放大比例1.02 */}
+.utils-transform-hover-scale-5:hover {transform: scale(1.05); /* 鼠标经过时触发放大比例1.05 */}
+.utils-transform-hover-scale-10:hover {transform: scale(1.10); /* 鼠标经过时触发放大比例1.10 */}
+.utils-transform-hover-bg-scale-1:hover {background-size: 101%; /* 鼠标经过时触发放大比例1.01 */}
+.utils-transform-hover-bg-scale-2:hover {background-size: 102%; /* 鼠标经过时触发放大比例1.02 */}
+.utils-transform-hover-bg-scale-5:hover {background-size: 105%; /* 鼠标经过时触发放大比例1.05 */}
+.utils-transform-hover-bg-scale-10:hover {background-size: 110%; /* 鼠标经过时触发放大比例1.10 */}
+.utils-transform-hover-rotate-15deg:hover {transform: rotate(15deg); /* 鼠标经过时触发顺时针旋转15deg */}
+.utils-transform-hover-rotate-30deg:hover {transform: rotate(30deg); /* 鼠标经过时触发顺时针旋转30deg */}
+.utils-transform-hover-rotate-45deg:hover {transform: rotate(45deg); /* 鼠标经过时触发顺时针旋转45deg */}
+.utils-transform-hover-rotate--15deg:hover {transform: rotate(-15deg); /* 鼠标经过时触发逆时针旋转15deg */}
+.utils-transform-hover-rotate--30deg:hover {transform: rotate(-30deg); /* 鼠标经过时触发逆时针旋转30deg */}
+.utils-transform-hover-rotate--45deg:hover {transform: rotate(-45deg); /* 鼠标经过时触发逆时针旋转45deg */}
+
+.utils-transform-show {opacity: 1;}
+.utils-transform-hover-show:hover {opacity: 1;}
+
+/* -----------------------------------------------
+    动画大全
+ ------------------------------------------------- */

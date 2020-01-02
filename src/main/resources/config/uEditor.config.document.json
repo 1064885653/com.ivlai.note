@@ -1,0 +1,369 @@
+{
+  "imageActionName": {
+    "type": "String",
+    "default": "uploadimage",
+    "info": "执行上传图片的action名称"
+  },
+  "imageFieldName": {
+    "type": "String",
+    "default": "upfile",
+    "info": "提交的图片表单名称"
+  },
+  "imageMaxSize": {
+    "type": "Number",
+    "default": "2048000",
+    "info": "上传大小限制，单位B"
+  },
+  "imageAllowFiles": {
+    "type": "String",
+    "default": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".bmp"
+    ],
+    "info": "上传图片格式显示 "
+  },
+  "imageCompressEnable": {
+    "type": "Boolean",
+    "default": true,
+    "info": "是否压缩图片"
+  },
+  "imageCompressBorder": {
+    "type": "Number",
+    "default": 1600,
+    "info": "图片压缩最长边限制"
+  },
+  "imageInsertAlign": {
+    "type": "String",
+    "default": "none",
+    "info": "插入的图片浮动方式"
+  },
+  "imageUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "图片访问路径前缀"
+  },
+  "imagePathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "scrawlActionName": {
+    "type": "String",
+    "default": "uploadscrawl",
+    "info": "执行上传涂鸦的action名称"
+  },
+  "scrawlFieldName": {
+    "type": "String",
+    "default": "upfile",
+    "info": "提交的图片表单名称"
+  },
+  "scrawlPathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "scrawlMaxSize": {
+    "type": "Number",
+    "default": 2048000,
+    "info": "上传大小限制，单位B"
+  },
+  "scrawlUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "图片访问路径前缀"
+  },
+  "scrawlInsertAlign": {
+    "type": "String",
+    "default": "none",
+    "info": ""
+  },
+  "snapscreenActionName": {
+    "type": "String",
+    "default": "uploadimage",
+    "info": "执行上传截图的action名称"
+  },
+  "snapscreenPathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "snapscreenUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "图片访问路径前缀"
+  },
+  "snapscreenInsertAlign": {
+    "type": "String",
+    "default": "none",
+    "info": "插入的图片浮动方式"
+  },
+  "catcherLocalDomain": {
+    "type": "Array",
+    "default": [
+      "127.0.0.1",
+      "localhost",
+      "img.baidu.com"
+    ],
+    "info": "例外的图片抓取域名"
+  },
+  "catcherActionName": {
+    "type": "String",
+    "default": "catchimage",
+    "info": "执行抓取远程图片的action名称"
+  },
+  "catcherFieldName": {
+    "type": "String",
+    "default": "source",
+    "info": "提交的图片列表表单名称"
+  },
+  "catcherPathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "catcherUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "图片访问路径前缀"
+  },
+  "catcherMaxSize": {
+    "type": "Number",
+    "default": 2048000,
+    "info": "上传大小限制，单位B"
+  },
+  "catcherAllowFiles": {
+    "type": "Array",
+    "default": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".bmp"
+    ],
+    "info": "抓取图片格式显示"
+  },
+  "videoActionName": {
+    "type": "String",
+    "default": "uploadvideo",
+    "info": "执行上传视频的action名称"
+  },
+  "videoFieldName": {
+    "type": "String",
+    "default": "upfile",
+    "info": "提交的视频表单名称"
+  },
+  "videoPathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/video/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "videoUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "视频访问路径前缀"
+  },
+  "videoMaxSize": {
+    "type": "Number",
+    "default": 102400000,
+    "info": "上传大小限制，单位B，默认100MB，注意修改服务器的大小限制"
+  },
+  "videoAllowFiles": {
+    "type": "Array",
+    "default": [
+      ".flv",
+      ".swf",
+      ".mkv",
+      ".avi",
+      ".rm",
+      ".rmvb",
+      ".mpeg",
+      ".mpg",
+      ".ogg",
+      ".ogv",
+      ".mov",
+      ".wmv",
+      ".mp4",
+      ".webm",
+      ".mp3",
+      ".wav",
+      ".mid"
+    ],
+    "info": "上传视频格式显示"
+  },
+  "fileActionName": {
+    "type": "String",
+    "default": "uploadfile",
+    "info": "controller里,执行上传视频的action名称"
+  },
+  "fileFieldName": {
+    "type": "String",
+    "default": "upfile",
+    "info": "提交的文件表单名称"
+  },
+  "filePathFormat": {
+    "type": "String",
+    "default": "/ueditor/php/upload/file/{yyyy}{mm}{dd}/{time}{rand:6}",
+    "info": "上传保存路径,可以自定义保存路径和文件名格式，上传路径配置"
+  },
+  "fileUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "文件访问路径前缀"
+  },
+  "fileMaxSize": {
+    "type": "Number",
+    "default": 51200000,
+    "info": "上传大小限制，单位B，默认50MB，注意修改服务器的大小限制"
+  },
+  "fileAllowFiles": {
+    "type": "Array",
+    "default": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".bmp",
+      ".flv",
+      ".swf",
+      ".mkv",
+      ".avi",
+      ".rm",
+      ".rmvb",
+      ".mpeg",
+      ".mpg",
+      ".ogg",
+      ".ogv",
+      ".mov",
+      ".wmv",
+      ".mp4",
+      ".webm",
+      ".mp3",
+      ".wav",
+      ".mid",
+      ".rar",
+      ".zip",
+      ".tar",
+      ".gz",
+      ".7z",
+      ".bz2",
+      ".cab",
+      ".iso",
+      ".doc",
+      ".docx",
+      ".xls",
+      ".xlsx",
+      ".ppt",
+      ".pptx",
+      ".pdf",
+      ".txt",
+      ".md",
+      ".xml"
+    ],
+    "info": "上传文件格式显示"
+  },
+  "imageManagerActionName": {
+    "type": "String",
+    "default": "listimage",
+    "info": "执行图片管理的action名称"
+  },
+  "imageManagerListPath": {
+    "type": "String",
+    "default": "/ueditor/php/upload/image/",
+    "info": "指定要列出图片的目录"
+  },
+  "imageManagerListSize": {
+    "type": "String",
+    "default": 20,
+    "info": "每次列出文件数量"
+  },
+  "imageManagerUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "图片访问路径前缀"
+  },
+  "imageManagerInsertAlign": {
+    "type": "String",
+    "default": "none",
+    "info": "插入的图片浮动方式"
+  },
+  "imageManagerAllowFiles": {
+    "type": "Array",
+    "default": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".bmp"
+    ],
+    "info": "列出的文件类型"
+  },
+  "fileManagerActionName": {
+    "type": "String",
+    "default": "listfile",
+    "info": "执行文件管理的action名称"
+  },
+  "fileManagerListPath": {
+    "type": "String",
+    "default": "/ueditor/php/upload/file/",
+    "info": "指定要列出文件的目录"
+  },
+  "fileManagerUrlPrefix": {
+    "type": "String",
+    "default": "",
+    "info": "文件访问路径前缀"
+  },
+  "fileManagerListSize": {
+    "type": "String",
+    "default": 20,
+    "info": "每次列出文件数量"
+  },
+  "fileManagerAllowFiles": {
+    "type": "Array",
+    "default": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".bmp",
+      ".flv",
+      ".swf",
+      ".mkv",
+      ".avi",
+      ".rm",
+      ".rmvb",
+      ".mpeg",
+      ".mpg",
+      ".ogg",
+      ".ogv",
+      ".mov",
+      ".wmv",
+      ".mp4",
+      ".webm",
+      ".mp3",
+      ".wav",
+      ".mid",
+      ".rar",
+      ".zip",
+      ".tar",
+      ".gz",
+      ".7z",
+      ".bz2",
+      ".cab",
+      ".iso",
+      ".doc",
+      ".docx",
+      ".xls",
+      ".xlsx",
+      ".ppt",
+      ".pptx",
+      ".pdf",
+      ".txt",
+      ".md",
+      ".xml"
+    ],
+    "info": "列出的文件类型"
+  }
+}

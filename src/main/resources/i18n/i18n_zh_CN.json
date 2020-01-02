@@ -1,0 +1,51 @@
+{
+  "languageName": "中文",
+  "menu": {
+    "home": "首页",
+    "about": "关于我们",
+    "class": "课程体系",
+    "project": "发展项目",
+    "team": "顾问团队",
+    "customer": "客户",
+    "wedo": "公益",
+    "contact": "联系我们"
+  },
+  "about": {
+  },
+  "myClass": {
+    "leader": "领导力发展课程体系",
+    "user": "个人能力课程体系",
+    "sell": "销售营销体系"
+  },
+  "contact": {
+    "contactUs": "联系我们"
+  },
+  "form": {
+    "submit": "提交",
+    "userName": "姓名",
+    "userAppellation": "称谓",
+    "userCompanyPost": "职务",
+    "userCompanyName": "公司名称",
+    "userCompanyAddress": "公司地址",
+    "demand": "需求"
+  },
+  "footer": {
+    "friendLink": [
+      "友情链接1",
+      "友情链接2",
+      "友情链接3",
+      "友情链接4"
+    ],
+    "info": "艾信专注于企业人才发展及生意结果，是人才与组织发展整体解决方案服务商，致力于成为企业持续发展的战略合作伙伴。艾信提供专业化的管理培训和咨询服务，帮助企业提升组织绩效，推进管理的专业化进程。多年来，艾信与众多资深的行业专家和机构不断引进、完善和开发高品质的培训课程，内容涵盖领导力与管理、市场营销与销售、个人能力发展等多个领域，通过多元、科学、创新的学习方案，为企业人才发展提供正向驱动力，创造个人成长与企业经营得双重价值。"
+  },
+  "contentMenu": {
+    "about_intro": "我们的简介",
+    "about_advantage": "我们的优势",
+    "about_situation": "我们的服务形势",
+    "about_process": "我们的服务流程",
+    "about_join": "加入我们",
+    "class_leadership": "领导力发展课程体系",
+    "class_personal": "个人能力课程体系",
+    "class_sales": "销售营销体系"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "languageName": "繁體中文",
+  "menu": {
+    "home": "首頁",
+    "about": "關於我們",
+    "class": "課程體系",
+    "project": "發展項目",
+    "team": "顧問團隊",
+    "customer": "客戶",
+    "wedo": "公益",
+    "contact": "聯繫我們"
+  },
+  "about": {
+
+  },
+  "myClass": {
+    "leader": "領導力發展課程體系",
+    "user": "個人能力課程體系",
+    "sell": "銷售營銷體系"
+  },
+  "contact": {
+    "contactUs": "聯繫我們"
+  },
+  "form": {
+    "submit": "提交",
+    "userName": "姓名",
+    "userAppellation": "稱謂",
+    "userCompanyPost": "職務",
+    "userCompanyName": "公司名稱",
+    "userCompanyAddress": "公司地址",
+    "demand": "需求"
+  },
+  "footer": {
+    "friendLink": [
+      "友情鏈接1",
+      "友情鏈接2",
+      "友情鏈接3",
+      "友情鏈接4"
+    ],
+    "info": "艾信專注於企業人才發展及生意結果，是人才與組織發展整體解決方案服務商，致力於成爲企業持續發展的戰略合作伙伴。艾信提供專業化的管理培訓和諮詢服務，幫助企業提升組織績效，推進管理的專業化進程。多年來，艾信與衆多資深的行業專家和機構不斷引進、完善和開發高品質的培訓課程，內容涵蓋領導力與管理、市場營銷與銷售、個人能力發展等多個領域，通過多元、科學、創新的學習方案，爲企業人才發展提供正向驅動力，創造個人成長與企業經營得雙重價值。"
+  },
+  "contentMenu": {
+    "about_intro": "我們的簡介",
+    "about_advantage": "我們的優勢",
+    "about_situation": "我們的服務形勢",
+    "about_process": "我們的服務流程",
+    "about_join": "加入我們"
+  }
+}

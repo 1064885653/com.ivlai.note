@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--数据源 ： 提供数据库连接-->
+<!--整合mybatis配置：-->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 环境配置：
+        事务 ：每一个标签（ select insert 。。。）（statement）都是一个事务
+        数据源 ：将数据源配置移除
+     -->
+    <!-- 其他配置： 扫描Mapper接口 和配置文件 -->
+    <!-- 全局配置： 缓存 懒加载。。。 -->
+    <typeAliases>
+        <package name="com.ivlai.note.entity"/>
+    </typeAliases>
+
+    <!-- 此处配置用于 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- 8.0 ↓ -->
+                <!--<property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://:3306/"/>-->
+                <!-- 8.0 ↑ -->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://49.4.54.83:3306/com.ivlai.note?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"/>
+                <property name="username" value="root"/>
+                <property name="password" value="zcy359210"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <package name="com.ivlai.note.mapper"/>
+    </mappers>
+
+
+</configuration>

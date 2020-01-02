@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 这是 spring 的配置 -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		                    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 开启 spring 的注解模式 -->
+    <context:annotation-config/>
+    <!-- 扫描添加 spring 注解的包 -->
+    <context:component-scan base-package="com.ivlai.note.*">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <!--
+        @Repository ：数据操作层（直接和数据库交互的代码）
+        @Service    ：Service 类型代码（服务层的工具类）
+        @Component  ：当前类是 java 中的一个普通类
+    -->
+
+
+    <!-- 数据源 ：提供的是数据库的连接对象  -->
+    <context:property-placeholder location="classpath:dbcp.properties"/>
+    <!--     采用 c3p0 的数据源 -->
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" name="dataSource">
+        <!-- 采用 c3p0 工具类的 set方法 采用set注入方法， -->
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <!-- 连接过期检测设置 -->
+        <property name="testConnectionOnCheckin" value="${jdbc.c3p0.testConnectionOnCheckin}"/>
+        <property name="testConnectionOnCheckout" value="${jdbc.c3p0.testConnectionOnCheckout}"/>
+        <property name="idleConnectionTestPeriod" value="${jdbc.c3p0.idleConnectionTestPeriod}"/>
+        <!-- 连接数设置 -->
+        <property name="initialPoolSize" value="${jdbc.c3p0.initialPoolSize}"/>
+        <property name="minPoolSize" value="${jdbc.c3p0.minPoolSize}"/>
+        <property name="maxPoolSize" value="${jdbc.c3p0.maxPoolSize}"/>
+        <!-- 超时时长设置 -->
+        <property name="maxIdleTime" value="${jdbc.c3p0.maxIdleTime}"/>
+        <property name="automaticTestTable" value="${jdbc.c3p0.automaticTestTable}"/>
+    </bean>
+
+    <!-- 记载 mybatis 配置 -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 加载 mybatis 配置文件 -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!-- 当mapper资源文件在resources文件夹中时使用 -->
+        <!--<property name="mapperLocations" value="mapper" />-->
+        <!-- 添加 pageHelper -->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+
+    <!-- 扫描 mapper 接口和对应的 xml 文件 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--<property name="basePackage" value="com.shidainaping.mapper"/>-->
+        <property name="basePackage" value="com.ivlai.note.mapper"/>
+    </bean>
+
+
+    <!-- 这里只有 AOP的事务控制 -->
+
+    <!-- 使用 AOP 进行声明式的事务控制 -->
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" name="dataSourceTransactionManager">
+        <!-- DataSourceTransactionManager :
+                DataSourceTransactionManager 当中一定有一个 setDataSource 的方法，引入的内容一定是一个 dataSource 类型的数据对象
+        -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 注解方式配置事务 -->
+    <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+
+    <!-- 设定通知 -->
+    <tx:advice id="transactionAdvice" transaction-manager="dataSourceTransactionManager">
+        <tx:attributes>
+            <tx:method name="important*" isolation="READ_COMMITTED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- AOP 切点设置 -->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.ivlai.note.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="transactionAdvice" pointcut-ref="pointcut"/>
+    </aop:config>
+
+
+</beans>
