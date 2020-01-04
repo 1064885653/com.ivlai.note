@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap - 主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- script -->
+    <script src="/public/utils/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/public/utils/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/utils/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/utils/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/public/css/z-utils-menu.css">
+
+</head>
+<body class="z-menu">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="/note/"> NOTE </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-dark" id="collapsibleNavbar">
+        <ul class="nav navbar-nav justify-content-start ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">前端框架</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="fab fa-bootstrap"></i> bootstrap</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fab fa-vuejs"></i> vue.js</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="z-left-menu bg-dark text-white position-absolute col" id="z-left-menu">
+            <h2 class="text-center">bootstrap</h2>
+            <div class="close-btn bg-dark text-white" onclick="$('.z-menu').toggleClass('menu-close');"><i class="fas fa-caret-left"></i></div>
+            <div class="card w-100 bg-dark">
+                <div class="card-header " data-toggle="collapse" href="#use">使用</div>
+                <div class=" collapse show" data-parent="#z-left-menu" id="use">
+                    <div class="list-group">
+                        <a href="./" class="list-group-item list-group-item-action active">主页</a>
+                        <a href="#" class="list-group-item list-group-item-action">引入</a>
+                        <a href="#" class="list-group-item list-group-item-action">说明</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-100 bg-dark">
+                <div class="card-header " data-toggle="collapse" href="#xys">响应式</div>
+                <div class=" collapse" data-parent="#z-left-menu" id="xys">
+                    <div class="list-group">
+                        <a href="sgxt.html" class="list-group-item list-group-item-action">栅格系统</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-100 bg-dark">
+                <div class="card-header " data-toggle="collapse" href="#uiys">UI元素</div>
+                <div class=" collapse" data-parent="#z-left-menu" id="uiys">
+                    <div class="list-group">
+                        <a href="color.html" class="list-group-item list-group-item-action">颜色组</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-100 bg-dark">
+                <div class="card-header " data-toggle="collapse" href="#hd">互动</div>
+                <div class=" collapse" data-parent="#z-left-menu" id="hd">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">xxx</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-100 bg-dark bootstrap-switch-version">
+                <div class="card-header " data-toggle="collapse" href="#switch-version">版本切换</div>
+                <div class="collapse show" id="switch-version">
+                    <div class="list-group">
+                        <a href="#content-iframe-bootstrap3" data-toggle="tab" class="list-group-item list-group-item-action active">bootstrap3 </a>
+                        <a href="#content-iframe-bootstrap4" data-toggle="tab" class="list-group-item list-group-item-action">bootstrap4 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="z-right-content-box tab-content" id="z-right-content-box">
+            <iframe id="content-iframe-bootstrap3" class="content-iframe tab-pane active" src="bootstrap3/index.html"></iframe>
+            <iframe id="content-iframe-bootstrap4" class="content-iframe tab-pane fade" src="bootstrap4/index.html"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>

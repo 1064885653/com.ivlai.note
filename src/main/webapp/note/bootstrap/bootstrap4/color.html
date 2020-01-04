@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap4 - 颜色</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- script -->
+    <script src="/public/utils/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/public/utils/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/utils/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/utils/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/public/css/z-utils-content.css">
+
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-body > p,
+        .card-body > a {
+            display: block;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-header">
+                <h1>bootstrap4 颜色
+                    <small>bootstrap4 颜色</small>
+                </h1>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">背景颜色</div>
+                <div class="card-body" style="background: black;">
+                    <a class="bg-primary text-white">.bg-primary：主要的 <span class="fl-r">#007bff a/button:hover/focus: #0062cc </span></a>
+                    <a class="bg-secondary text-white">.bg-secondary：次要的 <span class="fl-r">#6c757d a/button:hover/focus: #545b62 </span></a>
+                    <a class="bg-success text-white">.bg-success：成功的 <span class="fl-r">#28a745 a/button:hover/focus: #1e7e34 </span></a>
+                    <a class="bg-info text-white">.bg-info：提示的 <span class="fl-r">#17a2b8 a/button:hover/focus: #117a8b </span></a>
+                    <a class="bg-warning text-dark">.bg-warning：警告的 <span class="fl-r">#ffc107 a/button:hover/focus: #d39e00 </span></a>
+                    <a class="bg-danger text-white">.bg-danger：危险的 <span class="fl-r">#dc3545 a/button:hover/focus: #bd2130 </span></a>
+                    <a class="bg-light text-dark">.bg-light：浅灰色 <span class="fl-r">#f8f9fa a/button:hover/focus: #dae0e5 </span></a>
+                    <a class="bg-dark text-white">.bg-dark：深灰色 <span class="fl-r">#343a40 a/button:hover/focus: #1d2124 </span></a>
+                    <a class="bg-white text-dark">.bg-white：白色的 <span class="fl-r">#fff </span></a>
+                    <a class="bg-transparent text-white">.bg-transparent：透明的 <span class="fl-r">transparent </span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">背景颜色</div>
+                <div class="card-body" style="background: black;">
+                    <p class="bg-transparent"><a href="#" class="text-primary">.text-primary：主要的 <span class="fl-r">#007bff a:hover/focus: #0056b3 </span></a>
+                    </p>
+                    <p class="bg-transparent"><a href="#" class="text-secondary">.text-secondary：次要的<span class="fl-r">#6c757d a:hover/focus: #494f54</span></a>
+                    </p>
+                    <p class="bg-transparent"><a href="#" class="text-success">.text-success：成功的 <span class="fl-r">#28a745 a:hover/focus: #19692c </span></a>
+                    </p>
+                    <p class="bg-transparent"><a href="#" class="text-info">.text-info：提示的 <span class="fl-r">#17a2b8 a:hover/focus: #0f6674 </span></a></p>
+                    <p class="bg-transparent"><a href="#" class="text-warning">.text-warning：警告的 <span class="fl-r">#ffc107 a:hover/focus: #ba8b00 </span></a>
+                    </p>
+                    <p class="bg-transparent"><a href="#" class="text-danger">.text-danger：危险的 <span class="fl-r">#dc3545 a:hover/focus: #cbd3da </span></a></p>
+                    <p class="bg-transparent"><a href="#" class="text-light">.text-light：浅灰色 <span class="fl-r">#f8f9fa a:hover/focus: #dae0e5 </span></a></p>
+                    <p class="bg-transparent"><a href="#" class="text-dark">.text-dark：深灰色 <span class="fl-r">#343a40 a:hover/focus: #121416 </span></a></p>
+                    <p class="bg-transparent"><a href="#" class="text-muted">.text-muted <span class="fl-r">#6c757d </span></a></p>
+                    <p class="bg-transparent"><a href="#" class="text-white">.text-white：白色的 <span class="fl-r">#fff </span></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-info">提示信息</div>
+                <div class="card-body">
+                    1：bootstrap4不再提供bootstrap3中的成组的颜色class，需要使用<span class="text-info">bg-*/text-*</span>设置背景和字体，例如.btn-success等已被取消。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

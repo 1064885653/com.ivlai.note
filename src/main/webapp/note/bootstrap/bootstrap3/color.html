@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap3 - 颜色</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- script -->
+    <script src="/public/utils/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/public/utils/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/utils/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/utils/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/public/css/z-utils-content.css">
+
+    <style>
+
+        body.color .panel-body .p1 {
+            padding: 8px;
+            outline: 1px solid white;
+            text-align: left;
+        }
+
+        body.color .panel-body p.btn {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body class="color">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header">
+                <h1>bootstrap3颜色
+                    <small>bootstrap3颜色</small>
+                </h1>
+            </div>
+            <!-- 背景颜色 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">背景颜色</div>
+                    <div class="panel-body" style="background: black;">
+                        <p class="p1 bg-primary">.bg-primary <span class="fl-r">#337ab7</span></p>
+                        <p class="p1 bg-success">.bg-success <span class="fl-r">#dff0d8</span></p>
+                        <p class="p1 bg-danger">.bg-danger <span class="fl-r">#f2dede</span></p>
+                        <p class="p1 bg-info">.bg-info <span class="fl-r">#d9edf7</span></p>
+                        <p class="p1 bg-warning">.bg-warning <span class="fl-r">#fcf8e3</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 文字颜色 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">文字颜色</div>
+                    <div class="panel-body text-color" style="background: black;">
+                        <p class="p1 text-primary">.text-primary <span class="fl-r">#337ab7</span></p>
+                        <p class="p1 text-success">.text-success <span class="fl-r">#3c763d</span></p>
+                        <p class="p1 text-danger">.text-danger <span class="fl-r">#a94442</span></p>
+                        <p class="p1 text-info">.text-info <span class="fl-r">#31708f</span></p>
+                        <p class="p1 text-warning">.text-warning <span class="fl-r">#8a6d3b</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 连接颜色 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">超链接颜色</div>
+                    <div class="panel-body">
+                        <p class="p1"><a class="text-primary">.text-primary <span class="fl-r">#337ab7  :hover/focus:#286090</span></a></p>
+                        <p class="p1"><a class="text-success">.text-success <span class="fl-r">#3c763d  :hover/focus:#2b542c</span></a></p>
+                        <p class="p1"><a class="text-danger">.text-danger <span class="fl-r">#a94442  :hover/focus:#843534</span></a></p>
+                        <p class="p1"><a class="text-info">.text-info <span class="fl-r">#31708f  :hover/focus:#245269</span></a></p>
+                        <p class="p1"><a class="text-warning">.text-warning <span class="fl-r">#8a6d3b  :hover/focus:#66512c</span></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮颜色 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">按钮颜色</div>
+                    <div class="panel-body">
+                        <p class="p1 btn btn-default">.btn-default <span class="fl-r">#fff  :hover/focus: #e6e6e6</span></p>
+                        <p class="p1 btn btn-primary">.btn-primary <span class="fl-r">#337ab7  :hover/focus: #286090</span></p>
+                        <p class="p1 btn btn-success">.btn-success <span class="fl-r">#5cb85c  :hover/focus: #449d44</span></p>
+                        <p class="p1 btn btn-danger">.btn-danger <span class="fl-r">#d9534f  :hover/focus: #c9302c</span></p>
+                        <p class="p1 btn btn-info">.btn-info <span class="fl-r">#5bc0de  :hover/focus: #31b0d5</span></p>
+                        <p class="p1 btn btn-warning">.btn-warning <span class="fl-r">#f0ad4e  :hover/focus: #ec971f</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 标签颜色 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">按钮颜色</div>
+                    <div class="panel-body">
+                        <p class="p1"><span class="label label-default">.label-default &nbsp;&nbsp;&nbsp;#777&nbsp;&nbsp;href:hover/focus: #5e5e5e</span></p>
+                        <p class="p1"><span class="label label-primary">.label-primary &nbsp;&nbsp;&nbsp;#337ab7&nbsp;&nbsp;href:hover/focus: #286090</span></p>
+                        <p class="p1"><span class="label label-success">.label-success &nbsp;&nbsp;&nbsp;#5cb85c&nbsp;&nbsp;href:hover/focus: #449d44</span></p>
+                        <p class="p1"><span class="label label-danger">.label-danger &nbsp;&nbsp;&nbsp;#d9534f&nbsp;&nbsp;href:hover/focus: #c9302c</span></p>
+                        <p class="p1"><span class="label label-info">.label-info &nbsp;&nbsp;&nbsp;#5bc0de&nbsp;&nbsp;href:hover/focus: #31b0d5</span></p>
+                        <p class="p1"><span class="label label-warning">.label-warning &nbsp;&nbsp;&nbsp;#f0ad4e&nbsp;&nbsp;href:hover/focus: #ec971f</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 提示信息 -->
+            <div class="col-sm-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">提示信息</div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
