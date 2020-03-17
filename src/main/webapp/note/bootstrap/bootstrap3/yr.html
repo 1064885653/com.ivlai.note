@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap3 - 主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- script -->
+    <script src="/public/utils/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/public/utils/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/utils/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/utils/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/public/css/z-utils-content.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+          integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header">
+                <h1>bootstrap3
+                    <small>bootstrap3 引入方法</small>
+                </h1>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">CDN</div>
+                    <div class="panel-body">
+                        <h3>BootstrapCDN 分发&nbsp;&nbsp;<span style="font-size: 16px;">来自“bootstrap3中文网”</span></h3>
+                        <!-- CDN 分发1 -->
+                        <div>
+                            <pre style="background-color:#000000;color:#ffffff;font-family:'Consolas';font-size:13.5pt;"><span
+                                    style="color:#666666;">&lt;!-- Latest compiled and minified CSS --&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">link </span><span style="color:#cdb1ad;">rel</span><span
+                                    style="color:#00a40f;">="stylesheet" </span><span
+                                    style="color:#cdb1ad;">href</span><span style="color:#00a40f;">="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" </span><span
+                                    style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" </span><span
+                                    style="color:#cdb1ad;">crossorigin</span><span
+                                    style="color:#00a40f;">="anonymous"</span>&gt;<br><span style="color:#666666;">&lt;!-- Optional theme --&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">link </span><span style="color:#cdb1ad;">rel</span><span
+                                    style="color:#00a40f;">="stylesheet" </span><span
+                                    style="color:#cdb1ad;">href</span><span style="color:#00a40f;">="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" </span><span
+                                    style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" </span><span
+                                    style="color:#cdb1ad;">crossorigin</span><span
+                                    style="color:#00a40f;">="anonymous"</span>&gt;<br><span style="color:#666666;">&lt;!-- Latest compiled and minified JavaScript --&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">script </span><span style="color:#cdb1ad;">src</span><span
+                                    style="color:#00a40f;">="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" </span><span
+                                    style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" </span><span
+                                    style="color:#cdb1ad;">crossorigin</span><span
+                                    style="color:#00a40f;">="anonymous"</span>&gt;&lt;/<span
+                                    style="color:#7f93ff;">script</span>&gt;</pre>
+                        </div>
+                        <!-- StaticFileCDN 分发 -->
+                        <h3>StaticFileCDN 分发 &nbsp;&nbsp;<span style="font-size: 16px;">来自“菜鸟教程”</span></h3>
+                        <!-- CDN 分发2 -->
+                        <div>
+                            <pre style="background-color:#000000;color:#ffffff;font-family:'Consolas';font-size:13.5pt;"><span
+                                    style="color:#666666;">&lt;!-- </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">新</span><span
+                                    style="color:#666666;"> Bootstrap </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">核心</span><span
+                                    style="color:#666666;"> CSS </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">文件 </span><span
+                                    style="color:#666666;">--&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">link </span><span style="color:#cdb1ad;">href</span><span
+                                    style="color:#00a40f;">="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" </span><span
+                                    style="color:#cdb1ad;">rel</span><span
+                                    style="color:#00a40f;">="stylesheet"</span>&gt;<br><span style="color:#666666;">&lt;!-- jQuery</span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">文件。务必在</span><span
+                                    style="color:#666666;">bootstrap.min.js </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">之前引入 </span><span
+                                    style="color:#666666;">--&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">script </span><span style="color:#cdb1ad;">src</span><span
+                                    style="color:#00a40f;">="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"</span>&gt;&lt;/<span
+                                    style="color:#7f93ff;">script</span>&gt;<br><span
+                                    style="color:#666666;">&lt;!-- </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">最新的</span><span
+                                    style="color:#666666;"> Bootstrap </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">核心</span><span
+                                    style="color:#666666;"> JavaScript </span><span
+                                    style="color:#666666;font-family:'Arial Unicode MS';">文件 </span><span
+                                    style="color:#666666;">--&gt;<br></span>&lt;<span
+                                    style="color:#7f93ff;">script </span><span style="color:#cdb1ad;">src</span><span
+                                    style="color:#00a40f;">="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"</span>&gt;&lt;/<span
+                                    style="color:#7f93ff;">script</span>&gt;</pre>
+                        </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">下载</div>
+                    <div class="panel-body">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th style="width: 150px !important;"></th>
+                                <th>用于生产环境的 Bootstrap</th>
+                                <th>Bootstrap 源码</th>
+                                <th>Sass</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>bootstrap3中文网</th>
+                                <td>
+                                    <a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/2126244/9c5b6db6-5245-11e6-800b-b1e5008b1179?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200313T094802Z&X-Amz-Expires=300&X-Amz-Signature=c67a1a2afc8ffe8eeea43588f6f30594ded53edad53aeda0b6c7c618811ed9bc&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dbootstrap-3.3.7-dist.zip&response-content-type=application%2Foctet-stream"
+                                       title="https://github-production-release-asset-2e65be.s3.amazonaws.com/2126244/9c5b6db6-5245-11e6-800b-b1e5008b1179?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200313T094802Z&X-Amz-Expires=300&X-Amz-Signature=c67a1a2afc8ffe8eeea43588f6f30594ded53edad53aeda0b6c7c618811ed9bc&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dbootstrap-3.3.7-dist.zip&response-content-type=application%2Foctet-stream">bootstrap-3.3.7-dist.zip</a>
+                                </td>
+                                <td>
+                                    <a href="https://codeload.github.com/twbs/bootstrap/zip/v3.3.7"
+                                       title="https://codeload.github.com/twbs/bootstrap/zip/v3.3.7">bootstrap-3.3.7.zip</a>
+                                </td>
+                                <td>
+                                    <a href="https://codeload.github.com/twbs/bootstrap-sass/tar.gz/v3.3.7"
+                                       title="https://codeload.github.com/twbs/bootstrap-sass/tar.gz/v3.3.7">bootstrap-sass-3.3.7.tar.gz</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

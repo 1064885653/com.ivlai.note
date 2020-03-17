@@ -16,8 +16,14 @@ body.z-menu {
     background: rgba(0, 0, 0, 0.01);
 }
 
-.z-menu.menu-close .z-left-menu {
+.z-menu .z-left-menu {
+    transition: 0.3s;
     margin-left: -210px;
+    z-index: 99;
+}
+
+.z-menu .z-left-menu:hover {
+    margin-left: 0;
 }
 
 .z-menu .z-left-menu .close-btn {
@@ -38,8 +44,8 @@ body.z-menu {
 
 .z-menu .z-right-content-box {
     transition: 500ms;
-    width: calc(100% - 220px);
-    margin-left: 220px;
+    width: calc(100% - 20px);
+    margin-left: 20px;
     min-height: calc(100vh - 60px);
     padding: 5px;
 }

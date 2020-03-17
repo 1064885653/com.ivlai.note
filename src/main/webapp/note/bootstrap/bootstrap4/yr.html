@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap4 - 主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- script -->
+    <script src="/public/utils/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/public/utils/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/utils/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/utils/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="/public/css/z-utils-content.css">
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-header">
+                <h1>bootstrap4
+                    <small>bootstrap4 引入方法</small>
+                </h1>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header bg-dark text-white">CDN引入</div>
+                <div class="card-body">
+                    <h3>BootstrapCDN 分发 &nbsp;&nbsp;<span style="font-size: 16px;">来自“bootstrap4中文网”</span></h3>
+                    <div>
+                        <pre style="background-color:#000000;color:#ffffff;font-family:'Consolas';font-size:13.5pt;padding: 10px;border-radius: 10px;">&lt;<span
+                                style="color:#7f93ff;">link </span><span style="color:#cdb1ad;">rel</span><span
+                                style="color:#00a40f;">="stylesheet" </span><span
+                                style="color:#cdb1ad;">href</span><span
+                                style="color:#00a40f;">="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" </span><span
+                                style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" </span><span
+                                style="color:#cdb1ad;">crossorigin</span><span
+                                style="color:#00a40f;">="anonymous"</span>&gt;<br>&lt;<span
+                                style="color:#7f93ff;">script </span><span style="color:#cdb1ad;">src</span><span
+                                style="color:#00a40f;">="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" </span><span
+                                style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" </span><span
+                                style="color:#cdb1ad;">crossorigin</span><span
+                                style="color:#00a40f;">="anonymous"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;<br><br><span
+                                style="color:#666666;">&lt;!-- </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">如果你使用的是编译过的</span><span
+                                style="color:#666666;"> JavaScript</span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">，不要忘记在它之前引入</span><span
+                                style="color:#666666;"> jQuery </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">和</span><span
+                                style="color:#666666;"> Popper.js </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">的</span><span
+                                style="color:#666666;"> CDN </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">版本。 </span><span
+                                style="color:#666666;">--&gt;<br></span>&lt;<span
+                                style="color:#7f93ff;">script </span><span
+                                style="color:#cdb1ad;">src</span><span style="color:#00a40f;">="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" </span><span
+                                style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" </span><span
+                                style="color:#cdb1ad;">crossorigin</span><span
+                                style="color:#00a40f;">="anonymous"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;<br>&lt;<span
+                                style="color:#7f93ff;">script </span><span style="color:#cdb1ad;">src</span><span
+                                style="color:#00a40f;">="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" </span><span
+                                style="color:#cdb1ad;">integrity</span><span style="color:#00a40f;">="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" </span><span
+                                style="color:#cdb1ad;">crossorigin</span><span
+                                style="color:#00a40f;">="anonymous"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;</pre>
+                    </div>
+                    <br>
+                    <h3>StaticFileCDN 分发 &nbsp;&nbsp;<span style="font-size: 16px;">来自“菜鸟教程”</span></h3>
+                    <div>
+                        <pre style="background-color:#000000;color:#ffffff;font-family:'Consolas';font-size:13.5pt;padding: 10px;border-radius: 10px;"><span
+                                style="color:#666666;">&lt;!-- </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">新</span><span
+                                style="color:#666666;"> Bootstrap4 </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">核心</span><span
+                                style="color:#666666;"> CSS </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">文件 </span><span
+                                style="color:#666666;">--&gt;<br></span>&lt;<span
+                                style="color:#7f93ff;">link </span><span
+                                style="color:#cdb1ad;">rel</span><span style="color:#00a40f;">="stylesheet" </span><span
+                                style="color:#cdb1ad;">href</span><span style="color:#00a40f;">="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"</span>&gt;<br><span
+                                style="color:#666666;">&lt;!-- jQuery</span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">文件。务必在</span><span
+                                style="color:#666666;">bootstrap.min.js </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">之前引入 </span><span
+                                style="color:#666666;">--&gt;<br></span>&lt;<span
+                                style="color:#7f93ff;">script </span><span
+                                style="color:#cdb1ad;">src</span><span style="color:#00a40f;">="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;<br><span style="color:#666666;">&lt;!-- bootstrap.bundle.min.js </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">用于弹窗、提示、下拉菜单，包含了</span><span
+                                style="color:#666666;"> popper.min.js --&gt;<br></span>&lt;<span style="color:#7f93ff;">script </span><span
+                                style="color:#cdb1ad;">src</span><span style="color:#00a40f;">="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;<br><span
+                                style="color:#666666;">&lt;!-- </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">最新的</span><span
+                                style="color:#666666;"> Bootstrap4 </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">核心</span><span
+                                style="color:#666666;"> JavaScript </span><span
+                                style="color:#666666;font-family:'Arial Unicode MS';">文件 </span><span
+                                style="color:#666666;">--&gt;<br></span>&lt;<span
+                                style="color:#7f93ff;">script </span><span
+                                style="color:#cdb1ad;">src</span><span style="color:#00a40f;">="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"</span>&gt;&lt;/<span
+                                style="color:#7f93ff;">script</span>&gt;</pre>
+                    </div>
+                </div>
+                <div class="card-footer bg-dark text-white"></div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark text-white">下载</div>
+                <div class="card-body">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="width: 200px !important;"></th>
+                            <th>用于生产环境的 Bootstrap</th>
+                            <th>Bootstrap 源码</th>
+                            <th>Sass</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>来自bootstrap4中文网</th>
+                            <td>
+                                <a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/2126244/0ad86b00-11f0-11ea-988e-7cdaea6da926?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200317T034232Z&X-Amz-Expires=300&X-Amz-Signature=157f768ce049baee6d19d51db8a1cf92af3c4f6c0e18a9679b998a3dd0044cfc&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dbootstrap-4.4.1-dist.zip&response-content-type=application%2Foctet-stream"
+                                   title="https://github-production-release-asset-2e65be.s3.amazonaws.com/2126244/0ad86b00-11f0-11ea-988e-7cdaea6da926?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200317T034232Z&X-Amz-Expires=300&X-Amz-Signature=157f768ce049baee6d19d51db8a1cf92af3c4f6c0e18a9679b998a3dd0044cfc&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dbootstrap-4.4.1-dist.zip&response-content-type=application%2Foctet-stream">bootstrap-4.4.1-dist.zip</a>
+                            </td>
+                            <td>
+                                <a href="https://codeload.github.com/twbs/bootstrap/zip/v4.4.1" title="https://codeload.github.com/twbs/bootstrap/zip/v4.4.1">bootstrap-4.4.1.zip</a>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+                <div class="card-footer bg-dark text-white"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
